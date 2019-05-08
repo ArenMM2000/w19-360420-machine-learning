@@ -2,21 +2,21 @@ import java.util.List;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
 
-
-
 public class kNNMain{
 
   public static void main(String... args) throws FileNotFoundException{
 
     // TASK 1: Use command line arguments to point DataSet.readDataSet method to
     // the desired file. Choose a given DataPoint, and print its features and label
-
-
-
+	String PATH_TO_DATA = args[0];
+	System.out.println(PATH_TO_DATA);
+	List <DataPoint> i = DataSet.readDataSet(PATH_TO_DATA);
+	DataPoint dp = i.get(32);
+	System.out.println(dp.getLabel());
+	System.out.println(dp.getX());
+	
+	
     //TASK 2:Use the DataSet class to split the fullDataSet into Training and Held Out Test Dataset
-
-
-    // TASK 3: Use the DataSet class methods to plot the 2D data (binary and multi-class)
 
 
 
