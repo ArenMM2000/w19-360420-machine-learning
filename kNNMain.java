@@ -11,13 +11,14 @@ public class kNNMain{
 	String PATH_TO_DATA = args[0];
 	System.out.println(PATH_TO_DATA);
 	List <DataPoint> i = DataSet.readDataSet(PATH_TO_DATA);
-	DataPoint dp = i.get(32);
+	DataPoint dp = i.get(37);
+	String printableX = Arrays.toString(dp.getX());
 	System.out.println(dp.getLabel());
-	System.out.println(dp.getX());
+	System.out.println(printableX);
 	
 	
     //TASK 2:Use the DataSet class to split the fullDataSet into Training and Held Out Test Dataset
-
+	
 
 
     // TASK 4: write a new method in DataSet.java which takes as arguments to DataPoint objects,
