@@ -18,7 +18,8 @@ public class kNNMain{
 	
 	
     //TASK 2:Use the DataSet class to split the fullDataSet into Training and Held Out Test Dataset
-	
+	List<DataPoint> testSet = DataPoint.getTestSet(i, 0.3);
+	List<DataPoint> trainingSet = DataPoint.getTrainingSet(i, 0.7);
 
 
     // TASK 4: write a new method in DataSet.java which takes as arguments to DataPoint objects,
